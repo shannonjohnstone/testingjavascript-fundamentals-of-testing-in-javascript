@@ -8,14 +8,14 @@ export const expect = (actual) => {
       }
     },
     toEqual() {},
-    toBeGreaterThan() {}
+    toBeGreaterThan() {},
   }
 }
 
-export const test = (title, cb) => {
+export const test = async (title, cb) => {
   console.log('----------------------------------------------------------------')
   try {
-    cb()
+    await cb()
     console.log(chalk.green(`✔ ${title}`))
   } catch (error) {
     console.error(chalk.red(`✘︎ ${title}`))

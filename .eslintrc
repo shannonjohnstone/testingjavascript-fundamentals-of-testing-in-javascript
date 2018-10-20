@@ -1,0 +1,7 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 2,
+    "comma-dangle": [2, "always-multiline"]
+  }
+}

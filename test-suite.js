@@ -1,5 +1,5 @@
 import { test, expect } from './assertion-library'
-import { sum, subtract } from './math'
+import { sum, asyncSum, subtract } from './math'
 
 (() => {
   let expected;
@@ -11,6 +11,14 @@ import { sum, subtract } from './math'
   }
 
   test('sum test', sumTest);
+
+  async function asyncSumTest() {
+    result = await asyncSum(3, 7)
+    expected = -2
+    expect(result).toBe(expected)
+  }
+
+  test('asyncSum test', asyncSumTest)
 
   function subtractTest() {
     result = subtract(10, 5)
