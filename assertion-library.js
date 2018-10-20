@@ -23,3 +23,6 @@ export const test = async (title, cb) => {
   }
   console.log('----------------------------------------------------------------')
 }
+
+global.expect = expect;
+global.test = test;

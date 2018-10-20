@@ -4,7 +4,7 @@
   "description": "testing javascript",
   "main": "assertion-library.js",
   "scripts": {
-    "compile": "parcel watch build index.js --target",
+    "compile": "parcel watch build index.js  --target",
     "run:test": "nodemon ./dist/index.js"
   },
   "keywords": [
